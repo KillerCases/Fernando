@@ -1,0 +1,76 @@
+
+<div class="cover_image">
+	<%= image_tag("Cover.png", {:style => "width:100%;"}) %>
+</div>
+
+<div class="cover_text">
+	<p> Meet Fernando the seafaring cat ...</p>
+	<p> He lives aboard a Thames sailing barge with rusty red sails and a cargo of coal. Thames barges are iconic sailing boats that carried cargo into the city of London for centuries and can still be seen on the River Thames today.</p>
+	<p>This charming story will introduce young children to the Thames barge using beautiful illustrations, rhyming nautical language and of course, Fernando the cat!</p>
+</div>
+
+
+<div class="buy_panel">
+	<h1>Buy the paperback</h1>
+
+	 <%= form_tag charges_path do %>
+
+	 <article>
+    	<%= hidden_field_tag 'amount', '4.99' %>
+  	</article>
+
+	<article>
+	    <% if flash[:error].present? %>
+	      <div id="error_explanation">
+	        <p><%= flash[:error] %></p>
+	      </div>
+	    <% end %>
+	    <label class="amount">
+	      <span>Amount: £4.99</span>
+	    </label>
+	</article>
+
+	<script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+          data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+          data-description="Fernando & The Thames Barge - Paperback"
+          data-amount="500"
+          data-locale="auto"
+          data-currency="gbp"
+          data-shipping-address="true">
+	</script>
+
+	<% end %>
+</div>
+
+
+<div class="buy_panel">
+	<h1>Buy the hardback</h1>
+
+	 <%= form_tag charges_path do %>
+
+	<article>
+    	<%= hidden_field_tag 'amount', '12.99' %>
+  	</article>
+	  
+  	<article>
+	    <% if flash[:error].present? %>
+	      <div id="error_explanation">
+	        <p><%= flash[:error] %></p>
+	      </div>
+	    <% end %>
+	    <label class="amount">
+	      <span>Amount: £12.99</span>
+	    </label>
+	</article>
+
+	<script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+          data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+          data-description="Fernando & The Thames Barge - Hardback"
+          data-amount="1000"
+          data-locale="auto"
+          data-currency="gbp"
+          data-shipping-address="true">
+	 </script>
+
+	<% end %>
+</div>
