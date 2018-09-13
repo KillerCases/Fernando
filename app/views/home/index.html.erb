@@ -4,19 +4,19 @@
 </div>
 
 <div class="cover_text">
-	<p> Meet Fernando the seafaring cat ...</p>
+	<h2> Meet Fernando the seafaring cat ...</h2>
 	<p> He lives aboard a Thames sailing barge with rusty red sails and a cargo of coal. Thames barges are iconic sailing boats that carried cargo into the city of London for centuries and can still be seen on the River Thames today.</p>
 	<p>This charming story will introduce young children to the Thames barge using beautiful illustrations, rhyming nautical language and of course, Fernando the cat!</p>
 </div>
 
 
 <div class="buy_panel">
-	<h1>Buy the paperback</h1>
+	<h2>Buy the paperback</h2>
 
 	 <%= form_tag charges_path do %>
 
 	 <article>
-    	<%= hidden_field_tag 'amount', '4.99' %>
+    	<%= hidden_field_tag 'amount', '7.98' %>
   	</article>
 
 	<article>
@@ -26,7 +26,7 @@
 	      </div>
 	    <% end %>
 	    <label class="amount">
-	      <span>Amount: £4.99</span>
+	      <span>Amount: £4.99 + (£2.99 P&P)</span>
 	    </label>
 	</article>
 
@@ -41,15 +41,15 @@
 
 	<% end %>
 </div>
-
+<p></p>
 
 <div class="buy_panel">
-	<h1>Buy the hardback</h1>
+	<h2>Buy the hardback</h2>
 
 	 <%= form_tag charges_path do %>
 
 	<article>
-    	<%= hidden_field_tag 'amount', '12.99' %>
+    	<%= hidden_field_tag 'amount', '17.98' %>
   	</article>
 	  
   	<article>
@@ -59,7 +59,7 @@
 	      </div>
 	    <% end %>
 	    <label class="amount">
-	      <span>Amount: £12.99</span>
+	      <span>Amount: £13.99 (+ £3.99 P&P)</span>
 	    </label>
 	</article>
 
@@ -73,4 +73,11 @@
 	 </script>
 
 	<% end %>
+</div>
+
+<div class="cover_text">
+	<h2> About the Author</h2>
+	<p> Jo Samuels is a keen amateur sailor who lives in South East London with her family and black cat, Fernando. She has sailed in different places around the world in various modern and classic boats. Her longest trip so far was from Rotterdam (Holland) to Tenerife (Canary Islands) on a Dutch top-sailed schooner. Despite his love for adventure, Fernando was unable to join her.</p>
+	<h2> About the Illustrator</h2>
+	<p> Working out of her studio at home in Vancouver, British Columbia, Sakshi Mangal draws inspiration from nature and her work is heavily influenced by imagining her surroundings through the eyes of children. Born in Mumbai, she later moved to England to pursue a Bachelor’s degree in Animation from Teesside University, which led to her Masters degree from Cambridge School of Art in children’s book illustration. Since then Sakshi has been writing and illustrating picture books all across the globe. <a href="https://www.sakshimangal.com">www.sakshimangal.com</a></p>
 </div>
