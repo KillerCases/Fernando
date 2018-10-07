@@ -14,19 +14,47 @@
  *= require_self
  */
 
+ .spacer{
+ 	display:block;
+ 	margin: auto;
+ 	padding: 100px;
+/* 	border: 3px solid black;*/
+ }
+
+/*.image_group{
+	margin: auto;
+	display:block;
+	border: 3px solid black;
+}*/
 
 .cover_image{
 	margin: auto;
 	display: block;
-    width: 60%;
+    width: 24%;
+/*    border: 2px solid grey;*/
+    float:left;
+}
+
+.cover_image2{
+	margin: auto;
+	display: block;
+    width: 75%;
+/*    border: 3px solid grey;*/
+ /*   float:left;*/
+}
+
+.cover_image3{
+	margin: auto;
+	display: block;
+    width: 24%;
     border: 3px solid black;
-    padding: 20px;
+    float:left;
 }
 
 .cover_text{
 	margin: auto;
 	display: block;
-	width: 60%;
+	width: 40%;
 	text-align: center;
 	font-family: open sans;
 	font-size: 24px;
@@ -36,10 +64,19 @@
 .buy_panel{
 	margin: auto;
 	display: block;
-	border: 3px solid black;
+	border: 3px solid grey;
 	width: 60%;
 	text-align: center;
 	font-family: open sans;
 	font-size: 24px;
 	padding: 20px;
+}
+
+.video_panel{
+	text-align: center;
+	font-family: open sans;
+	font-size: 24px;
+	margin: auto;
+	display: block;
+
 }
