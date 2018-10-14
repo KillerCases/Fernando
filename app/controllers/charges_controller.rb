@@ -9,7 +9,22 @@ def create
 
   customer = Stripe::Customer.create(
     :email => params[:stripeEmail],
-    :source  => params[:stripeToken]
+    :source  => params[:stripeToken],
+    :metadata => { # optional
+      :shipping_name =>params[:stripeShippingName],
+      :shipping_line1 => params[:stripeShippingAddressLine1],
+      :shipping_zip => params[:stripeShippingAddressZip],
+      :shipping_state => params[:stripeShippingAddressState],
+      :shipping_city => params[:stripeShippingAddressCity],
+      :shipping_country => params[:stripeShippingAddressCountry]
+
+    },
+    # :shipping =>{
+    #   :name => 'test',
+    #   :address =>{
+    #     :line1 => 'test'
+    #   }
+    # }
   )
 
   charge = Stripe::Charge.create(
