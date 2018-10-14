@@ -26,7 +26,7 @@
 	 <%= form_tag charges_path do %>
 
 	 <article>
-    	<%= hidden_field_tag 'amount', '7.98' %>
+    	<%= hidden_field_tag 'amount', '8.48' %>
   	</article>
 
 	<article>
@@ -36,14 +36,14 @@
 	      </div>
 	    <% end %>
 	    <label class="amount">
-	      <span>Amount: £4.99 + (£2.99 P&P)</span>
+	      <span>£5.49 + (£2.99 P&P UK Delivery Only)</span>
 	    </label>
 	</article>
 
 	<script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
           data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
           data-description="Fernando & The Thames Barge - Paperback"
-          data-amount="500"
+          data-amount="848"
           data-locale="auto"
           data-currency="gbp"
           data-shipping-address="true">
@@ -55,11 +55,10 @@
 
 <div class="buy_panel">
 	<h2>Buy the hardback</h2>
-
 	 <%= form_tag charges_path do %>
 
 	<article>
-    	<%= hidden_field_tag 'amount', '17.98' %>
+    	<%= hidden_field_tag 'amount', '18.48' %>
   	</article>
 	  
   	<article>
@@ -69,14 +68,14 @@
 	      </div>
 	    <% end %>
 	    <label class="amount">
-	      <span>Amount: £13.99 (+ £3.99 P&P)</span>
+	      <span>£15.49 (+ £3.99 P&P UK Delivery Only)</span>
 	    </label>
 	</article>
 
 	<script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
           data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
           data-description="Fernando & The Thames Barge - Hardback"
-          data-amount="1000"
+          data-amount="1848"
           data-locale="auto"
           data-currency="gbp"
           data-shipping-address="true">
@@ -85,9 +84,10 @@
 	<% end %>
 </div>
 
+
 <div class="video_panel">
 	<h2>Watch the video</h2>
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/AM3VomijOw8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	<iframe src="https://www.youtube.com/embed/AZlBNX6EmKs?ecver=2" width="640" height="360" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </div>
 
 <div class="cover_text">
@@ -95,6 +95,10 @@
 	<p> Jo Samuels is a keen amateur sailor who lives in South East London with her family and black cat, Fernando. She has sailed in different places around the world in various modern and classic boats. Her longest trip so far was from Rotterdam (Holland) to Tenerife (Canary Islands) on a Dutch top-sailed schooner. Despite his love for adventure, Fernando was unable to join her.</p><p><a href="mailto:jo.killercases@gmail.com">Contact the author</a></p>
 	<h2> About the Illustrator</h2>
 	<p> Working out of her studio at home in Vancouver, British Columbia, Sakshi Mangal draws inspiration from nature and her work is heavily influenced by imagining her surroundings through the eyes of children. Born in Mumbai, she later moved to England to pursue a Bachelor’s degree in Animation from Teesside University, which led to her Masters degree from Cambridge School of Art in children’s book illustration. Since then Sakshi has been writing and illustrating picture books all across the globe.</p><p><a href="https://www.sakshimangal.com">www.sakshimangal.com</a></p>
+	<h2>Book Details</h2>
+	<p>Paperback ISBN: 978-1-5255-3111-8</p>
+	<p>Hardback ISBN: 978-1-5255-3110-1</p>	
+	<p>Available on Amazon and via the Ingram Book Catalog.</p>
 </div>
 
 
