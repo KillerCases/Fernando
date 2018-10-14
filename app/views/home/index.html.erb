@@ -58,7 +58,7 @@
 	 <%= form_tag charges_path do %>
 
 	<article>
-    	<%= hidden_field_tag 'amount', '18.48' %>
+    	<%= hidden_field_tag 'amount', '15.98' %>
   	</article>
 	  
   	<article>
@@ -68,14 +68,14 @@
 	      </div>
 	    <% end %>
 	    <label class="amount">
-	      <span>£15.49 (+ £3.99 P&P UK Delivery Only)</span>
+	      <span>£11.99 (+ £3.99 P&P UK Delivery Only)</span>
 	    </label>
 	</article>
 
 	<script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
           data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
           data-description="Fernando & The Thames Barge - Hardback"
-          data-amount="1848"
+          data-amount="1598"
           data-locale="auto"
           data-currency="gbp"
           data-shipping-address="true">
